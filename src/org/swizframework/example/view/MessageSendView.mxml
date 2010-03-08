@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	
+	<s:layout>
+		<s:HorizontalLayout/>
+	</s:layout>
+	
+	<fx:Script>
+		<![CDATA[
+			import org.swizframework.example.event.MessageEvent;
+			
+			protected function buttonClickHandler(event:MouseEvent):void
+			{
+				dispatchEvent(new MessageEvent(MessageEvent.MESSAGE, message.text));
+			}
+		]]>
+	</fx:Script>
+	
+	<s:TextInput id="message"/>
+	<s:Button label="Send Message"
+			  click="buttonClickHandler(event)"/>
+	
+</s:Group>

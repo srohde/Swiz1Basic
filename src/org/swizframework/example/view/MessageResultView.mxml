@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	
+	<s:layout>
+		<s:HorizontalLayout/>
+	</s:layout>
+	
+	<fx:Script>
+		<![CDATA[
+			import org.swizframework.example.model.AppModel;
+			
+			[Bindable]
+			public var model:AppModel;
+		]]>
+	</fx:Script>
+	
+	<s:Label text="Message:"/>
+	<s:Label text="{model.message}"
+			 fontWeight="bold"/>
+	
+</s:Group>
