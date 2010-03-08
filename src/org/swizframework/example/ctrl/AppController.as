@@ -8,15 +8,17 @@ package org.swizframework.example.ctrl
 	public class AppController
 	{
 
+		[Inject]
 		public var model:AppModel;
 
 		public function AppController()
 		{
 		}
 
+		[Mediate(event="MessageEvent.MESSAGE", properties="message")]
 		public function handleMessage(message:String):void
 		{
-
+			model.message = message;
 		}
 
 	}

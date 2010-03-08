@@ -12,6 +12,7 @@
 			import org.swizframework.example.model.AppModel;
 			
 			[Bindable]
+			[Inject]
 			public var model:AppModel;
 		]]>
 	</fx:Script>
