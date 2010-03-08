@@ -16,7 +16,7 @@ package org.swizframework.example.ctrl
 
 		public function handleMessage(message:String):void
 		{
-
+			model.message = message;
 		}
 
 	}
