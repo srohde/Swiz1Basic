@@ -4,7 +4,12 @@
 					   xmlns:mx="library://ns.adobe.com/flex/mx">
 
 	<fx:Declarations>
-
+		<swiz:SwizConfig id="config" xmlns:swiz="http://swiz.swizframework.org"
+						 viewPackages="org.swizframework.example.view"
+						 eventPackages="org.swizframework.example.event"/>
+		<swiz:Swiz xmlns:swiz="http://swiz.swizframework.org"
+				   config="{config}"
+				   beanProviders="{[Beans]}"/>
 	</fx:Declarations>
 
 	<view:AppView horizontalCenter="0"
