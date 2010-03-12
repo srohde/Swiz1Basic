@@ -4,7 +4,11 @@
 					   xmlns:mx="library://ns.adobe.com/flex/mx">
 
 	<fx:Declarations>
-		<swiz:SwizConfig id="config" xmlns:swiz="http://swiz.swizframework.org"
+		<s:TraceTarget includeCategory="true"
+					   includeLevel="true"
+					   includeTime="true"/>
+		<swiz:SwizConfig id="config"
+						 xmlns:swiz="http://swiz.swizframework.org"
 						 viewPackages="org.swizframework.example.view"
 						 eventPackages="org.swizframework.example.event"/>
 		<swiz:Swiz xmlns:swiz="http://swiz.swizframework.org"

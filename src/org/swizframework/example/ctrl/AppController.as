@@ -15,6 +15,12 @@ package org.swizframework.example.ctrl
 		{
 		}
 
+		[PostConstruct]
+		public function init():void
+		{
+			trace("model " + model);
+		}
+
 		[Mediate(event="MessageEvent.MESSAGE", properties="message")]
 		public function handleMessage(message:String):void
 		{
