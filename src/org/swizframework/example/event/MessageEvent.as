@@ -4,7 +4,7 @@ package org.swizframework.example.event
 
 	public class MessageEvent extends Event
 	{
-		public static const MESSAGE:String = "foo";
+		public static const MESSAGE:String = "message";
 
 		public var message:String;
 
